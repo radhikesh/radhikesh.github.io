@@ -15,6 +15,37 @@ h1{
     font-size: 300%;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  background: #f5f5f5;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #444;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
 div.jumbotron{
     width: 100%;
 	height: 100px;
@@ -25,9 +56,23 @@ div.jumbotron{
 }
 div.container-fluid{
     width: 100%;
-	height: 400px;
+	height: 430px;
     border: 1px solid  #00a3cc;
 	background-color:  #00a3cc;
+}
+
+div.container.text-center {
+
+    width: 100%;
+	height: 20px;
+    background-color:  #008fb3;
+	margin-top:30px;
+}
+div.email-phone{
+    width: 100%;
+	height: 90px;
+    border: 1px solid  #00a3cc;
+	background-color:  #008fb3;
 }
 
 header{
@@ -46,11 +91,291 @@ header{
     border-radius: 50%;
 }
 
+.page-nav-space-holder {
+  height: 60px;
+  position: relative;
+}
+.page-nav-wrapper {
+  background: #007888;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color:#007a99;
+}
+.page-nav-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #00BCD4;
+}
+.page-nav-wrapper a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: 500;
+}
+.page-nav-wrapper .page-nav {
+  margin: 0 auto;
+  display: inline-block;
+  margin-left:370px;
+}
+.page-nav-wrapper .page-nav li {
+  margin-right: 30px;
+  display: inline-block;
+  background: none;
+}
+.page-nav-wrapper .page-nav li:hover,
+.page-nav-wrapper .page-nav li:active {
+  background: none;
+}
+.page-nav-wrapper .page-nav li a {
+  color: rgba(255, 255, 255, 0.6);
+  padding: inherit;
+}
+.page-nav-wrapper .page-nav li a:hover {
+  color: #fff;
+}
+.page-nav-wrapper .page-nav li a:hover,
+.page-nav-wrapper .page-nav li a:active,
+.page-nav-wrapper .page-nav li a:focus {
+  background: none;
+}
+.page-nav-wrapper .page-nav li a.active {
+  color: #fff;
+  background: none;
+}
+.page-nav-wrapper .page-nav li:last-child {
+  margin-right: 0;
+}
+
+.wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 45px;
+  background: #fff;
+  margin-bottom: 45px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+section#experiences-section {}
+.section:last-child {
+  margin-bottom: 0;
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.skills-section .subtitle {
+  font-size: 18px;
+  color: #8a8a8a;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  font-weight: 300;
+}
+.skills-section .top-skills {
+  margin-bottom: 60px;
+}
+.skills-section .top-skills .item {
+  margin-bottom: 45px;
+}
+.skills-section .level {
+  color: #8a8a8a;
+  margin-bottom: 15px;
+}
+.skills-section .desc {
+  color: #666;
+}
+
+.skills-section .skill-tag {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 6px 30px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #f5f5f5;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.skills-section .misc-skills {
+ margin-top:20px;
+}
+
+
+.timeline {
+  border-left: 3px solid #00BCD4;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  position: relative;
+  padding: 0 30px;
+  margin-left: 280px;
+}
+.timeline .item {
+  position: relative;
+  margin-bottom: 45px;
+}
+.timeline .item:last-child {
+  margin-bottom: 0;
+}
+.timeline .item:before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fff;
+  border: 3px solid #00BCD4;
+}
+.timeline .item:after {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #00BCD4;
+  z-index: 10;
+}
+.timeline .work-place {
+  position: relative;
+}
+.timeline .location {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  color: #8a8a8a;
+}
+.timeline .location .fa {
+  margin-right: 5px;
+}
+.timeline .place {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.timeline .job-meta {
+  position: absolute;
+  left: -280px;
+  top: 0;
+}
+.timeline .job-meta .title {
+  font-size: 18px;
+  color: #00BCD4;
+}
+.timeline .job-meta .time {
+  color: #8a8a8a;
+}
+.timeline .job-desc {
+  color: #666;
+}
+.education-section .item {
+  margin-bottom: 45px;
+}
+.education-section .item-inner {
+  padding: 0 30px;
+}
+.education-section .degree {
+  font-size: 18px;
+  color: #00BCD4;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.education-section .education-body {
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.education-section .time {
+  color: #8a8a8a;
+  margin-bottom: 15px;
+}
+.education-section .desc {
+  color: #666;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+
+.education-section .item {
+  margin-bottom: 45px;
+}
+.education-section .item-inner {
+  padding: 0 100px;
+}
+.education-section .degree {
+  font-size: 18px;
+  color: #00BCD4;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.education-section .education-body {
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.education-section .time {
+  color: #8a8a8a;
+  margin-bottom: 15px;
+}
+.education-section .desc {
+  color: #666;
+}
 
 </style>
 	
 	
     <!-- Bootstrap CSS -->
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Test!</title>
@@ -65,7 +390,6 @@ header{
 		<div class="col-sm-5"></div>
 		</div>
 		</div>
-		</div> 
    </div>
 	 <div class="container-fluid">
 	    <div class="row">
@@ -75,7 +399,216 @@ header{
 		</div>
 		<div class="col-sm-5"></div>
 		</div>
+		<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-6">
+		<h1 style="font-family:sans-serif;color:white;text-align:right;margin-top:10px;margin-right:100px;font-size:220%;">Data Scientist</h1>
+		</div>
+		<div class="col-sm-5"></div>
+		</div>
+		<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+		<p style="font-family:sans-serif;color:white;text-align:justify;margin-top:10px;margin-right:100px;font-size:110%;">
+		I am Radhikesh, currently working as a Data Scientist at the University of Mississippi Medical Center, I did my masters from University of Texas at Dallas
+		in Information Technology and Management with a specialization in Data Analytics. My current day to day role is to work with billions of rows of unstructured data, process it and perform 
+		statistical analysis, create dashboards and reporting solutions using tools such as R, SAS and Python. I also have experience using machine learning and have participated in Kaggle competitions. 
+		I am currently open for opportunity in the field of data science where I can get opportunity to work on challenging projects and my skills and experience can have a broader impact on the audience. 
+		</p>
+		</div>
+		<div class="col-sm-3"></div>
+		</div>
 	</div>
+	<div class="email-phone">
+	    <div class="container text-center">
+		<ul class = "list-inline">
+			<li class ="email list-inline-item">
+			<a style="color:white;"href="mailto:rradhikesh@gmail.com"><i class="fa fa-envelope"></i> rradhikesh@gmail.com</a>
+			</li>
+			<li class ="list-inline-item">
+			<a style="color:white;" href="tel: 14694529084"><i class="fa fa-phone"></i> 1469 452 9084</a>
+			</li>
+			</ul>
+		</div>
+		</div>
+	
+	<!--<div class="email-phone">
+		<div class="row">
+		<div class="col-sm-5"></div>
+		<div class="col-sm-2"">
+		<div class="col-sm-5"></div>
+		</div>
+		</div> -->
+	<div class="page-nav-space-holder d-none d-md-block">
+		<div id="page-nav-wrapper" class="page-nav-wrapper text center">
+		<div class="container">
+		<ul id="page-nav" class="nav page-nav list-inline">
+		<li class="nav-item">
+		<a class="scrollto nav-link" href="#experience-section">
+		Experiences</a>
+		</li>
+		<li class="nav-item">
+		<a class="scrollto nav-link" href="#education-section">
+		Education</a>
+		</li>
+		<li class="nav-item">
+		<a class="scrollto nav-link" href="#skills-section">
+		Skills</a>
+		</li>
+		<li class="nav-item">
+		<a class="scrollto nav-link" href="#contact-section">
+		Contact</a>
+		</li>
+		</ul>
+		</div>
+		</div>
+	<div class="wrapper container">
+	
+		<section id="experience-section" class="experience-section section">
+		<h2 class="section-title">Work Experiences</h2>
+		<div class="timeline">
+			<div class="item">
+	        <div class="work-place">
+				<h3 class ="place">University of Mississippi Medical Center</h3>
+				<div class="location">
+					<i class="fa fa-map-marker" aria-hidden="true">
+					</i>
+					Jackson, MS
+					</div>
+				</div>
+			<div class="job-meta">
+			 <div class="title">Data Scientist</div>
+			 <div class="time">Sept 2016-Present</div>
+			 </div>
+			<div class="job-desc">
+			<ul>
+			<li> Created R shiny web application to generate dynamic reports for the client by rendering R markdown package in shiny</li>
+			<li> Wrangled real time XML data obtained from NCBI’s API using XML package in R then created dynamic visualizations using R shiny</li>
+			<li> Created a dynamic word cloud htmlwidget package named as d3WordCloudWidget for an R shiny dashboard application </li>
+			<li> Developed R shiny application having histogram, data table and dynamic word cloud with click functionality to filter the application</li>
+			<li> Created a SAS macro to process the data present in multiple SAS data files and then created csv and STATA files for further analysis</li>
+			<li> Manipulated data frame using Python’s pandas and numpy libraries and created network visualization of the cleaned data using d3</li>
+			<li> Created a data dictionary from survey data and data map using R and then created a database in RedCap using data dictionary</li>
+			<li> Performed descriptive statistics on multistate transition data by creating an interactive tree (Sunburst) visualization using d3.js</li>
+
+
+			</ul>
+			</div>
+			</div>
+			<div class="item">
+	        <div class="work-place">
+				<h3 class ="place">University of California Los Angeles</h3>
+				<div class="location">
+					<i class="fa fa-map-marker" aria-hidden="true">
+					</i>
+					Los Angeles, CA
+					</div>
+				</div>
+			<div class="job-meta">
+			 <div class="title">Data Analyst</div>
+			 <div class="time">June 2016-Sept 2016</div>
+			 </div>
+			<div class="job-desc">
+			<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+			Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+			</p>
+			</div>
+			</div>
+			<div class="item">
+	        <div class="work-place">
+				<h3 class ="place">Vizient</h3>
+				<div class="location">
+					<i class="fa fa-map-marker" aria-hidden="true">
+					</i>
+					Irving, TX
+					</div>
+				</div>
+			<div class="job-meta">
+			 <div class="title">Data Management Intern</div>
+			 <div class="time">June 2015-April 2016</div>
+			 </div>
+			<div class="job-desc">
+			<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+			Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+			</p>
+			</div>
+			</div>
+			
+		</div>
+		</section>
+		<section id="education-section" class="education-section section">
+			<h2 class="section-title">Education</h2>
+			<div class="row">
+			<div class="item col-12 col-md-6">
+				<div class="item-inner">
+				<h3 class="degree">MS Information Technology & Management</h3>
+				<div class="education-body">
+				University of Texas at Dallas
+				</div>
+				<div class="time">Aug 2014-May 2016</div>
+				</div>
+				</div>
+				
+		    <div class="item col-12 col-md-6">
+				<div class="item-inner">
+				<h3 class="degree">BE Electronics and Communication</h3>
+				<div class="education-body">
+				Rajiv Gandhi Prodoyogiki Vishwavidyalaya
+				</div>
+				<div class="time">Aug 2010-May 2014</div>
+				</div>
+				</div>
+			</div>
+		</section>	
+				
+				
+				
+		<section id="skills-section" class="skills-section section text-center">
+			<h2 class="section-title">Professional Skills</h2>
+			<div class="other-skills">
+			<h3 class="subtitle">Statistical Languages</h3>
+			<div class="misc-skills">
+				<span class="skill-tag">R</span>
+				<span class="skill-tag">SAS</span>
+				<span class="skill-tag">Python</span>
+				<span class="skill-tag">STATA</span>
+			</div>
+			</div>
+			<div class="other-skills">
+			<h3 class="subtitle">Data Manipulation, Machine Learning and Visualization Libraries</h3>
+			<div class="misc-skills">
+				<span class="skill-tag">Pandas</span>
+				<span class="skill-tag">Scipy</span>
+				<span class="skill-tag">Numpy</span>
+				<span class="skill-tag">Scikit-Learn</span>
+				<br>
+				<span class="skill-tag">H2O</span>
+				<span class="skill-tag">Tidyverse</span>
+				<span class="skill-tag">d3.js</span>
+			</div>
+			</div>
+			<div class="other-skills">
+			<h3 class="subtitle">Dashboard and  Reporting Framework</h3>
+			<div class="misc-skills">
+				<span class="skill-tag">R Shiny</span>
+				<span class="skill-tag">Tableau</span>
+				<span class="skill-tag">Qlikview</span>
+				<span class="skill-tag">Business Objects</span>
+			</div>
+			</div>
+			<div class="other-skills">
+			<h3 class="subtitle">Database Languages</h3>
+			<div class="misc-skills">
+				<span class="skill-tag">MS SQL</span>
+				<span class="skill-tag">MySQL</span>
+			</div>
+			</div>
+		</section>
+	</div>
+	
+	
 	
 	
     <!-- Optional JavaScript -->
